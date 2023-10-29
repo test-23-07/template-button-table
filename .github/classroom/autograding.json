@@ -2,6 +2,7 @@
   "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Tic_tac_toe.svg/640px-Tic_tac_toe.svg.png",
   "timeframe":"30 Minuten (Viel Erfolg!)",
   "tests": [
+
      {
       "specs": {"title":"HTML Datei namens grid.html mit HTML Tabelle erstellen"},
       "name": "HTML file must contain a table tag",
@@ -11,17 +12,48 @@
       "javascript": "document.querySelectorAll('table').length >= 1",
       "output": "true",
       "comparison": "exact",
-      "points": 20
+      "points": 5
     },
+    
     {
-      "specs": {"title":"Tabelle mit Tabellenüberschrift erstellen"},
-      "name": "Include a table header titled 'TicTacToe'",
-      "feedback": "Your table should have a header (<thead> element) with a title 'TicTacToe'.",
-      "file": "grid.html",
-      "javascript": "(function() { var header = document.querySelector('table thead th'); return header && header.textContent.trim() === 'TicTacToe'; })()",      "output": "true",
-      "comparison": "exact",
-      "points": 20
-    },
+  "specs": {
+    "title": "Setze den <title> Tag auf 'Welcome to TicTacToe'"
+  },
+  "name": "Set the title tag to 'Welcome to TicTacToe'",
+  "feedback": "The title of your HTML page should be 'Welcome to TicTacToe'.",
+  "file": "grid.html",
+  "javascript": "(function() { return document.title.trim() === 'Welcome to TicTacToe' ? 'true' : 'false'; })()",
+  "output": "true",
+  "comparison": "exact",
+  "points": 5
+},
+    {
+  "specs": {
+    "title": "Tabelle mit Tabellenüberschrift erstellen"
+  },
+  "name": "Include a table caption titled 'TicTacToe'",
+  "feedback": "Your table should have a caption (<caption> element) with the title 'TicTacToe'.",
+  "file": "grid.html",
+  "javascript": "(function() { var caption = document.querySelector('table caption'); return caption && caption.textContent.trim() === 'TicTacToe'; })()",
+  "output": "true",
+  "comparison": "exact",
+  "points": 10
+},
+    {
+  "specs": {
+    "title": "Setze die ID der Tabelle auf 'game'"
+  },
+  "name": "Set the table ID to 'game'",
+  "feedback": "The ID of your table should be set to 'game'.",
+  "urls": ["https://www.w3schools.com/html/html_id.asp"],
+  "file": "grid.html",
+  "javascript": "(function() { var table = document.querySelector('table#game'); return table ? 'true' : 'false'; })()",
+  "output": "true",
+  "comparison": "exact",
+  "points": 5
+},
+
+
     {
       "specs": {"title":"HTML Tabelle um 9 Tabellenfelder erweitern"},
       "name": "Create nine cells within the table",
@@ -30,7 +62,7 @@
       "javascript": "document.querySelectorAll('table td').length",
       "output": "9",
       "comparison": "exact",
-      "points": 20
+      "points": 10
     },
     {
       "specs": {"title":"Jeweils pro Tabellenfeld einen <button> hinzufügen"},
@@ -41,8 +73,22 @@
       "javascript": "document.querySelectorAll('table td button').length",
       "output": "9",
       "comparison": "exact",
-      "points": 20
+      "points": 15
     },
+    {
+  "specs": {
+    "title": "Jeder Button sollte X anzeigen"
+  },
+  "name": "Place a button with 'X' in each cell",
+  "feedback": "Each cell in your table must contain a button displaying 'X'.",
+  "urls": ["https://www.w3schools.com/tags/tag_button.asp"],
+  "file": "grid.html",
+  "javascript": "(function() { var buttons = document.querySelectorAll('table td button'); return buttons.length === 9 && Array.from(buttons).every(btn => btn.textContent.trim() === 'X') ? 'true' : 'false'; })()",
+  "output": "true",
+  "comparison": "exact",
+  "points": 20
+},
+
     {
       "specs": {"title":"Benennen der IDs jedes Buttons von cell1 bis cell9"},      
       "name": "Assign unique IDs to each button",
@@ -52,6 +98,19 @@
       "output": "cell1,cell2,cell3,cell4,cell5,cell6,cell7,cell8,cell9",
       "comparison": "exact",
       "points": 20
-    }
+    },
+    {
+  "specs": {
+    "title": "Füge außerhalb der Tabelle eine Schaltfläche 'Play' mit der ID 'play' hinzu"
+  },
+  "name": "Include a 'Play' button with ID 'play' outside the table",
+  "feedback": "There should be a button outside the table with the text 'Play' and an ID of 'play'.",
+  "file": "grid.html",
+  "javascript": "(function() { var playButton = document.querySelector('button#play'); return playButton && playButton.textContent.trim() === 'Play' ? 'true' : 'false'; })()",
+  "output": "true",
+  "comparison": "exact",
+  "points": 10
+}
+
   ]
 }
