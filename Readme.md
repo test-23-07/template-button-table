@@ -1,13 +1,13 @@
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Tic_tac_toe.svg/640px-Tic_tac_toe.svg.png" alt="Eure Aufgabe ist es, eine HTML-Datei namens grid.html zu erstellen mit einer 3x3 HTML Tabelle für ein TicTacToe Spiel." width="300"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Tic_tac_toe.svg/640px-Tic_tac_toe.svg.png" alt="Eure Aufgabe ist es, eine HTML-Datei namens tictactoe.html zu erstellen mit einer 3x3 HTML Tabelle für ein TicTacToe Spiel." width="300"/>
 
 ---
 # Aufgabe
-Eure Aufgabe ist es, eine HTML-Datei namens grid.html zu erstellen mit einer 3x3 HTML Tabelle für ein TicTacToe Spiel.
+Eure Aufgabe ist es, eine HTML-Datei namens tictactoe.html zu erstellen mit einer 3x3 HTML Tabelle für ein TicTacToe Spiel.
 * 100 Punkte
 * 30 Minuten (Viel Erfolg!)
 
 ---
-### HTML Datei namens grid.html mit HTML Tabelle erstellen (5 Punkte)
+### HTML Datei namens tictactoe.html mit HTML Tabelle erstellen (5 Punkte)
 #### HTML file must contain a table tag
 
 ###### Hilfe
