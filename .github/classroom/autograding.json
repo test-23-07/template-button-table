@@ -86,7 +86,7 @@
   "javascript": "(function() { var buttons = document.querySelectorAll('table td button'); return buttons.length === 9 && Array.from(buttons).every(btn => btn.textContent.trim() === 'X') ? 'true' : 'false'; })()",
   "output": "true",
   "comparison": "exact",
-  "points": 20
+  "points": 10
 },
 
     {
@@ -97,7 +97,7 @@
       "javascript": "(function() { return Array.from(document.querySelectorAll('table td button')).map(button => button.id).sort().join(','); })()",
       "output": "cell1,cell2,cell3,cell4,cell5,cell6,cell7,cell8,cell9",
       "comparison": "exact",
-      "points": 20
+      "points": 10
     },
     {
   "specs": {
@@ -110,7 +110,21 @@
   "output": "true",
   "comparison": "exact",
   "points": 10
+},
+{
+  "specs": {
+    "title": "Füge nun einen 'onclick' event handler hinzu und zeige eine Nachricht mittels alert();"
+  },
+  "name": "looking for onclick handler and javascript call to alert(); ",
+  "feedback": "Check your onclick handler: Clicking on the button should trigger an alert() call.",
+  "urls": ["https://www.w3schools.com/jsref/event_onclick.asp","https://www.w3schools.com/jsref/met_win_alert.asp"],
+  "file": "grid.html",
+  "javascript": "(function() { var playButton = document.querySelector('button#play'); if (!playButton) return 'false'; var alerted = false; window.alert = function() { alerted = true; }; playButton.click(); return alerted ? 'true' : 'false'; })()",
+  "output": "true",
+  "comparison": "exact",
+  "points": 20
 }
+
 
   ]
 }
