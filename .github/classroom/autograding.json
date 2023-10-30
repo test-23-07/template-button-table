@@ -113,7 +113,7 @@
 },
 {
   "specs": {
-    "title": "Füge nun einen 'onclick' event handler hinzu und zeige eine Nachricht mittels alert();"
+    "title": "Füge nun dem Play Button einen 'onclick' event handler hinzu und zeige so eine Nachricht mittels alert();"
   },
   "name": "looking for onclick handler and javascript call to alert(); ",
   "feedback": "Check your onclick handler: Clicking on the button should trigger an alert() call.",

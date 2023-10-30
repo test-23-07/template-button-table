@@ -54,7 +54,7 @@ Eure Aufgabe ist es, eine HTML-Datei namens tictactoe.html zu erstellen mit eine
 ### Füge außerhalb der Tabelle eine Schaltfläche 'Play' mit der ID 'play' hinzu (10 Punkte)
 #### Include a 'Play' button with ID 'play' outside the table
 
-### Füge nun einen 'onclick' event handler hinzu und zeige eine Nachricht mittels alert(); (20 Punkte)
+### Füge nun dem Play Button einen 'onclick' event handler hinzu und zeige so eine Nachricht mittels alert(); (20 Punkte)
 #### looking for onclick handler and javascript call to alert(); 
 
 ###### Hilfe
