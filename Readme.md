@@ -40,7 +40,7 @@ Eure Aufgabe ist es, eine HTML-Datei namens grid.html zu erstellen mit einer 3x3
 
 
 ---
-### Jeder Button sollte X anzeigen (20 Punkte)
+### Jeder Button sollte X anzeigen (10 Punkte)
 #### Place a button with 'X' in each cell
 
 ###### Hilfe
@@ -48,9 +48,18 @@ Eure Aufgabe ist es, eine HTML-Datei namens grid.html zu erstellen mit einer 3x3
 
 
 ---
-### Benennen der IDs jedes Buttons von cell1 bis cell9 (20 Punkte)
+### Benennen der IDs jedes Buttons von cell1 bis cell9 (10 Punkte)
 #### Assign unique IDs to each button
 
 ### Füge außerhalb der Tabelle eine Schaltfläche 'Play' mit der ID 'play' hinzu (10 Punkte)
 #### Include a 'Play' button with ID 'play' outside the table
 
+### Füge nun einen 'onclick' event handler hinzu und zeige eine Nachricht mittels alert(); (20 Punkte)
+#### looking for onclick handler and javascript call to alert(); 
+
+###### Hilfe
+* [Spickzettel](https://www.w3schools.com/jsref/event_onclick.asp) 
+* [Spickzettel](https://www.w3schools.com/jsref/met_win_alert.asp) 
+
+
+---
