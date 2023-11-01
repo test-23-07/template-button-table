@@ -56,7 +56,7 @@
 
 
     {
-      "specs": {"title":"HTML Tabelle um 9 Tabellenfelder erweitern"},
+      "specs": {"title":"HTML Tabelle um 9 Tabellenfelder erweitern (3 x 3 rows/cols)"},
       "name": "Create nine cells within the table",
       "feedback": "Your table must contain exactly nine cells (<td> elements).",
       "file": "tictactoe.html",
@@ -66,7 +66,7 @@
       "points": 10
     },
     {
-      "specs": {"title":"Jeweils pro Tabellenfeld einen <button> hinzufügen"},
+      "specs": {"title":"Jeweils pro Tabellenfeld einen button hinzufügen"},
       "name": "Place a button in each cell",
       "feedback": "Each cell in your table must contain a button.",
       "urls": ["https://www.w3schools.com/tags/tag_button.asp"],
