@@ -2,6 +2,8 @@
 
 ---
 # Aufgabe
+[![GitHub Classroom Workflow](https://github.com/False/actions/workflows/classroom.yml/badge.svg)](https://github.com/False/actions/workflows/classroom.yml) 
+
 Eure Aufgabe ist es, eine HTML-Datei namens tictactoe.html zu erstellen mit einer 3x3 HTML Tabelle für ein TicTacToe Spiel.
 * 100 Punkte
 * 30 Minuten (Viel Erfolg!)
@@ -29,10 +31,10 @@ Eure Aufgabe ist es, eine HTML-Datei namens tictactoe.html zu erstellen mit eine
 
 
 ---
-### HTML Tabelle um 9 Tabellenfelder erweitern (10 Punkte)
+### HTML Tabelle um 9 Tabellenfelder erweitern (3 x 3 rows/cols) (10 Punkte)
 #### Create nine cells within the table
 
-### Jeweils pro Tabellenfeld einen <button> hinzufügen (15 Punkte)
+### Jeweils pro Tabellenfeld einen button hinzufügen (15 Punkte)
 #### Place a button in each cell
 
 ###### Hilfe
