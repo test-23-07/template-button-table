@@ -3,7 +3,7 @@ name: Automatic Repo Setup
 on:
   push:
     branches:
-      - main # or whatever the default branch is (e.g., 'master')
+      - master # or whatever the default branch is (e.g., 'master')
 
 jobs:
   setup:
