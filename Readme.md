@@ -2,7 +2,7 @@
 
 ---
 # Aufgabe
-[![GitHub Classroom Workflow](https://github.com/False/actions/workflows/classroom.yml/badge.svg)](https://github.com/False/actions/workflows/classroom.yml) 
+[![GitHub Classroom Workflow](https://github.com/test-23-07/template-button-table/actions/workflows/classroom.yml/badge.svg)](https://github.com/test-23-07/template-button-table/actions/workflows/classroom.yml) 
 
 Eure Aufgabe ist es, eine HTML-Datei namens tictactoe.html zu erstellen mit einer 3x3 HTML Tabelle für ein TicTacToe Spiel.
 * 100 Punkte

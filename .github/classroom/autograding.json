@@ -1,62 +1,67 @@
-{ "repo":false,
+{
+  "repo": "test-23-07/template-button-table",
   "introduction": "Eure Aufgabe ist es, eine HTML-Datei namens tictactoe.html zu erstellen mit einer 3x3 HTML Tabelle für ein TicTacToe Spiel.",
   "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Tic_tac_toe.svg/640px-Tic_tac_toe.svg.png",
-  "timeframe":"30 Minuten (Viel Erfolg!)",
+  "timeframe": "30 Minuten (Viel Erfolg!)",
   "tests": [
-
-     {
-      "specs": {"title":"HTML Datei namens tictactoe.html mit HTML Tabelle erstellen"},
+    {
+      "specs": {
+        "title": "HTML Datei namens tictactoe.html mit HTML Tabelle erstellen"
+      },
       "name": "HTML file must contain a table tag",
       "feedback": "Your HTML file does not have a <table> element. Please add a table tag.",
-      "urls":["https://www.w3schools.com/tags/tag_table.asp"],
+      "urls": [
+        "https://www.w3schools.com/tags/tag_table.asp"
+      ],
       "file": "tictactoe.html",
       "javascript": "document.querySelectorAll('table').length >= 1",
       "output": "true",
       "comparison": "exact",
       "points": 5
     },
-    
     {
-  "specs": {
-    "title": "Setze den <title> Tag auf 'Welcome to TicTacToe'"
-  },
-  "name": "Set the title tag to 'Welcome to TicTacToe'",
-  "feedback": "The title of your HTML page should be 'Welcome to TicTacToe'.",
-  "file": "tictactoe.html",
-  "javascript": "(function() { return document.title.trim() === 'Welcome to TicTacToe' ? 'true' : 'false'; })()",
-  "output": "true",
-  "comparison": "exact",
-  "points": 5
-},
+      "specs": {
+        "title": "Setze den <title> Tag auf 'Welcome to TicTacToe'"
+      },
+      "name": "Set the title tag to 'Welcome to TicTacToe'",
+      "feedback": "The title of your HTML page should be 'Welcome to TicTacToe'.",
+      "file": "tictactoe.html",
+      "javascript": "(function() { return document.title.trim() === 'Welcome to TicTacToe' ? 'true' : 'false'; })()",
+      "output": "true",
+      "comparison": "exact",
+      "points": 5
+    },
     {
-  "specs": {
-    "title": "Tabelle mit Tabellenüberschrift erstellen"
-  },
-  "name": "Include a table caption titled 'TicTacToe'",
-  "feedback": "Your table should have a caption (<caption> element) with the title 'TicTacToe'.",
-  "file": "tictactoe.html",
-  "javascript": "(function() { var caption = document.querySelector('table caption'); return caption && caption.textContent.trim() === 'TicTacToe'; })()",
-  "output": "true",
-  "comparison": "exact",
-  "points": 10
-},
+      "specs": {
+        "title": "Tabelle mit Tabellenüberschrift erstellen"
+      },
+      "name": "Include a table caption titled 'TicTacToe'",
+      "feedback": "Your table should have a caption (<caption> element) with the title 'TicTacToe'.",
+      "file": "tictactoe.html",
+      "javascript": "(function() { var caption = document.querySelector('table caption'); return caption && caption.textContent.trim() === 'TicTacToe'; })()",
+      "output": "true",
+      "comparison": "exact",
+      "points": 10
+    },
     {
-  "specs": {
-    "title": "Setze die ID der Tabelle auf 'game'"
-  },
-  "name": "Set the table ID to 'game'",
-  "feedback": "The ID of your table should be set to 'game'.",
-  "urls": ["https://www.w3schools.com/html/html_id.asp"],
-  "file": "tictactoe.html",
-  "javascript": "(function() { var table = document.querySelector('table#game'); return table ? 'true' : 'false'; })()",
-  "output": "true",
-  "comparison": "exact",
-  "points": 5
-},
-
-
+      "specs": {
+        "title": "Setze die ID der Tabelle auf 'game'"
+      },
+      "name": "Set the table ID to 'game'",
+      "feedback": "The ID of your table should be set to 'game'.",
+      "urls": [
+        "https://www.w3schools.com/html/html_id.asp"
+      ],
+      "file": "tictactoe.html",
+      "javascript": "(function() { var table = document.querySelector('table#game'); return table ? 'true' : 'false'; })()",
+      "output": "true",
+      "comparison": "exact",
+      "points": 5
+    },
     {
-      "specs": {"title":"HTML Tabelle um 9 Tabellenfelder erweitern (3 x 3 rows/cols)"},
+      "specs": {
+        "title": "HTML Tabelle um 9 Tabellenfelder erweitern (3 x 3 rows/cols)"
+      },
       "name": "Create nine cells within the table",
       "feedback": "Your table must contain exactly nine cells (<td> elements).",
       "file": "tictactoe.html",
@@ -66,10 +71,14 @@
       "points": 10
     },
     {
-      "specs": {"title":"Jeweils pro Tabellenfeld einen button hinzufügen"},
+      "specs": {
+        "title": "Jeweils pro Tabellenfeld einen button hinzufügen"
+      },
       "name": "Place a button in each cell",
       "feedback": "Each cell in your table must contain a button.",
-      "urls": ["https://www.w3schools.com/tags/tag_button.asp"],
+      "urls": [
+        "https://www.w3schools.com/tags/tag_button.asp"
+      ],
       "file": "tictactoe.html",
       "javascript": "document.querySelectorAll('table td button').length",
       "output": "9",
@@ -77,21 +86,24 @@
       "points": 15
     },
     {
-  "specs": {
-    "title": "Jeder Button sollte X anzeigen"
-  },
-  "name": "Place a button with 'X' in each cell",
-  "feedback": "Each cell in your table must contain a button displaying 'X'.",
-  "urls": ["https://www.w3schools.com/tags/tag_button.asp"],
-  "file": "tictactoe.html",
-  "javascript": "(function() { var buttons = document.querySelectorAll('table td button'); return buttons.length === 9 && Array.from(buttons).every(btn => btn.textContent.trim() === 'X') ? 'true' : 'false'; })()",
-  "output": "true",
-  "comparison": "exact",
-  "points": 10
-},
-
+      "specs": {
+        "title": "Jeder Button sollte X anzeigen"
+      },
+      "name": "Place a button with 'X' in each cell",
+      "feedback": "Each cell in your table must contain a button displaying 'X'.",
+      "urls": [
+        "https://www.w3schools.com/tags/tag_button.asp"
+      ],
+      "file": "tictactoe.html",
+      "javascript": "(function() { var buttons = document.querySelectorAll('table td button'); return buttons.length === 9 && Array.from(buttons).every(btn => btn.textContent.trim() === 'X') ? 'true' : 'false'; })()",
+      "output": "true",
+      "comparison": "exact",
+      "points": 10
+    },
     {
-      "specs": {"title":"Benennen der IDs jedes Buttons von cell1 bis cell9"},      
+      "specs": {
+        "title": "Benennen der IDs jedes Buttons von cell1 bis cell9"
+      },
       "name": "Assign unique IDs to each button",
       "feedback": "Each button must have a unique ID, from 'cell1' to 'cell9'.",
       "file": "tictactoe.html",
@@ -101,31 +113,32 @@
       "points": 10
     },
     {
-  "specs": {
-    "title": "Füge außerhalb der Tabelle eine Schaltfläche 'Play' mit der ID 'play' hinzu"
-  },
-  "name": "Include a 'Play' button with ID 'play' outside the table",
-  "feedback": "There should be a button outside the table with the text 'Play' and an ID of 'play'.",
-  "file": "tictactoe.html",
-  "javascript": "(function() { var playButton = document.querySelector('button#play'); return playButton && playButton.textContent.trim() === 'Play' ? 'true' : 'false'; })()",
-  "output": "true",
-  "comparison": "exact",
-  "points": 10
-},
-{
-  "specs": {
-    "title": "Füge nun dem Play Button einen 'onclick' event handler hinzu und zeige so eine Nachricht mittels alert();"
-  },
-  "name": "looking for onclick handler and javascript call to alert(); ",
-  "feedback": "Check your onclick handler: Clicking on the button should trigger an alert() call.",
-  "urls": ["https://www.w3schools.com/jsref/event_onclick.asp","https://www.w3schools.com/jsref/met_win_alert.asp"],
-  "file": "tictactoe.html",
-  "javascript": "(function() { var playButton = document.querySelector('button#play'); if (!playButton) return 'false'; var alerted = false; window.alert = function() { alerted = true; }; playButton.click(); return alerted ? 'true' : 'false'; })()",
-  "output": "true",
-  "comparison": "exact",
-  "points": 20
-}
-
-
+      "specs": {
+        "title": "Füge außerhalb der Tabelle eine Schaltfläche 'Play' mit der ID 'play' hinzu"
+      },
+      "name": "Include a 'Play' button with ID 'play' outside the table",
+      "feedback": "There should be a button outside the table with the text 'Play' and an ID of 'play'.",
+      "file": "tictactoe.html",
+      "javascript": "(function() { var playButton = document.querySelector('button#play'); return playButton && playButton.textContent.trim() === 'Play' ? 'true' : 'false'; })()",
+      "output": "true",
+      "comparison": "exact",
+      "points": 10
+    },
+    {
+      "specs": {
+        "title": "Füge nun dem Play Button einen 'onclick' event handler hinzu und zeige so eine Nachricht mittels alert();"
+      },
+      "name": "looking for onclick handler and javascript call to alert(); ",
+      "feedback": "Check your onclick handler: Clicking on the button should trigger an alert() call.",
+      "urls": [
+        "https://www.w3schools.com/jsref/event_onclick.asp",
+        "https://www.w3schools.com/jsref/met_win_alert.asp"
+      ],
+      "file": "tictactoe.html",
+      "javascript": "(function() { var playButton = document.querySelector('button#play'); if (!playButton) return 'false'; var alerted = false; window.alert = function() { alerted = true; }; playButton.click(); return alerted ? 'true' : 'false'; })()",
+      "output": "true",
+      "comparison": "exact",
+      "points": 20
+    }
   ]
 }
